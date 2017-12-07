@@ -1,0 +1,88 @@
+.item {
+  @list: 12, 10, 1, 2, 3, 4, 5, 6;
+  .astyle(8);
+  .astyle(@n, @i:1) when (@i<=@n) {
+    @a: extract(@list, @i);
+    .fx-fgbl-grids-item1_@{i} {
+      display: block;
+      margin: 0 auto;
+      width: 100%;
+      height: 57px;
+      color: #fff;
+      font-size: 12px;
+      line-height: 57px;
+      text-align: center;
+      background: url("http://www.16163.com/zt/yys/app/gonglue2/pages/images/sy/fb@{a}.png") no-repeat;
+      background-size: 100% 57px;
+      border-radius: 6px;
+    }
+    .yl-fgbl-grids-item1_@{i} {
+      display: block;
+      margin: 0 auto;
+      width: 100%;
+      height: 57px;
+      color: #fff;
+      font-size: 12px;
+      line-height: 57px;
+      text-align: center;
+      background: url("http://www.16163.com/zt/yys/app/gonglue2/pages/images/yl/bg@{i}.png") no-repeat;
+      background-size: 100% 57px;
+      border-radius: 6px;
+    }
+    .bb-fgbl-grids-item@{i} {
+      display: block;
+      margin: 0 auto;
+      width: 100%;
+      height: 57px;
+      color: #fff;
+      font-size: 12px;
+      line-height: 57px;
+      text-align: center;
+      border-radius: 6px;
+    }
+    .astyle(@n, (@i + 1));
+  }
+
+  .bb-fgbl-grids-item1 {
+    background: url("http://www.16163.com/zt/yys/app/gonglue2/pages/images/grid-item-bg3.png") no-repeat;
+    background-size: 400% 123px;
+    background-position: 0 0;
+  }
+  .bb-fgbl-grids-item2 {
+    background: url("http://www.16163.com/zt/yys/app/gonglue2/pages/images/grid-item-bg3.png") no-repeat;
+    background-size: 400% 123px;
+    background-position: 34% 0;
+  }
+  .bb-fgbl-grids-item3 {
+    background: url("http://www.16163.com/zt/yys/app/gonglue2/pages/images/grid-item-bg3.png") no-repeat;
+    background-size: 400% 123px;
+    background-position: 2*34% 0;
+  }
+  .bb-fgbl-grids-item4 {
+    background: url("http://www.16163.com/zt/yys/app/gonglue2/pages/images/grid-item-bg3.png") no-repeat;
+    background-size: 400% 123px;
+    background-position: 3*34% 0;
+  }
+  .bb-fgbl-grids-item5 {
+    background: url("http://www.16163.com/zt/yys/app/gonglue2/pages/images/grid-item-bg3.png") no-repeat;
+    background-size: 400% 123px;
+    background-position: 0 3*34%;
+  }
+  .bb-fgbl-grids-item6 {
+    background: url("http://www.16163.com/zt/yys/app/gonglue2/pages/images/grid-item-bg3.png") no-repeat;
+    background-size: 400% 123px;
+    background-position: 34% 3*34%;
+  }
+  .bb-fgbl-grids-item7 {
+    background: url("http://www.16163.com/zt/yys/app/gonglue2/pages/images/grid-item-bg3.png") no-repeat;
+    background-size: 400% 123px;
+    background-position: 2*34% 3*34%;
+  }
+  .bb-fgbl-grids-item8 {
+    background: url("http://www.16163.com/zt/yys/app/gonglue2/pages/images/grid-item-bg3.png") no-repeat;
+    background-size: 400% 123px;
+    background-position: 3*34% 3*34%;
+  }
+}
+
+
